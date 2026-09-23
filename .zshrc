@@ -2,16 +2,19 @@
 
 bindkey -v
 
-setopt interactive_comments
+export HISTFILE=~/.zsh_history
+export SAVEHIST=1000
 
-HISTFILE=~/.zsh_history
-HISTSIZE=2000
-SAVEHIST=2000
+setopt AUTO_CD
+setopt AUTO_PUSHD
+setopt PUSHD_IGNORE_DUPS
+setopt EXTENDED_HISTORY
 setopt SHARE_HISTORY
 setopt HIST_IGNORE_ALL_DUPS
-setopt HIST_REDUCE_BLANKS 
-setopt HIST_VERIFY 
-setopt INC_APPEND_HISTORY
+setopt HIST_IGNORE_SPACE
+setopt HIST_VERIFY
+setopt MENU_COMPLETE
+setopt CORRECT
 
 # Lazy-load antidote from its functions directory.
 fpath=(~/.antidote/functions $fpath)
