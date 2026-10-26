@@ -37,6 +37,3 @@ fi
 source ${zsh_plugins}.zsh
 
 eval "$(starship init zsh)"
-
-echo "None of the AIs said Zig"
-echo "\e[3mPh'nglui mglw'nafh Zig R'lyeh wgah'nagl fhtagn\e[0m"
