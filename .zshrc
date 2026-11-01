@@ -17,8 +17,8 @@ setopt HIST_VERIFY
 setopt MENU_COMPLETE
 setopt CORRECT
 
-# Lazy-load antidote from its functions directory.
-fpath=(~/.antidote/functions $fpath)
+# Load Antidote.
+fpath=(/usr/share/zsh-antidote/functions $fpath)
 autoload -Uz antidote
 autoload -U compinit && compinit
 
