@@ -37,5 +37,3 @@ fi
 source ${zsh_plugins}.zsh
 
 eval "$(starship init zsh)"
-
-fastfetch
