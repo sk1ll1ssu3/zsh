@@ -36,4 +36,6 @@ fi
 # Source your static plugins file.
 source ${zsh_plugins}.zsh
 
+fastfetch
+
 eval "$(starship init zsh)"
