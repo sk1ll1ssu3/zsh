@@ -36,6 +36,8 @@ fi
 # Source your static plugins file.
 source ${zsh_plugins}.zsh
 
-fastfetch
+if [[ "$ZED_TERM" != "true" ]]; then
+  fastfetch
+fi
 
 eval "$(starship init zsh)"
